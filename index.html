@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arca Studio</title>
+
+  <!-- Added Caveat font for hover effect on "visuals" -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Inter:wght@300;400;500&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <img src="source/logo.png" alt="Arca" />
+    <div class="lbar"><div class="lfill"></div></div>
+  </div>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress-bar"><div id="progress-fill"></div></div>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- TOP LOGO BAR -->
+  <div class="top-bar">
+    <a href="#hero" class="nav-logo">
+      <img src="source/logo.png" alt="Arca" />
+      <span class="nav-logo-text">ARCA</span>
+    </a>
+  </div>
+
+  <!-- SIDE NAV (right side) -->
+  <nav class="side-nav" id="mainNav">
+    <a href="#hero" class="active" data-section="hero">
+      <i class="fas fa-home"></i>
+      <span class="nav-text">Home</span>
+    </a>
+    <a href="#services" data-section="services">
+      <i class="fas fa-briefcase"></i>
+      <span class="nav-text">Services</span>
+    </a>
+    <a href="#about" data-section="about">
+      <i class="fas fa-user"></i>
+      <span class="nav-text">About</span>
+    </a>
+    <a href="#process" data-section="process">
+      <i class="fas fa-cog"></i>
+      <span class="nav-text">Process</span>
+    </a>
+    <a href="#work" data-section="work">
+      <i class="fas fa-film"></i>
+      <span class="nav-text">Work</span>
+    </a>
+    <a href="#contact" data-section="contact">
+      <i class="fas fa-envelope"></i>
+      <span class="nav-text">Contact</span>
+    </a>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="noise-overlay"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-watermark">A</div>
+      <div class="particles-wrap" id="particles"></div>
+
+      <p class="hero-eyebrow">
+        <span class="tag-dot"></span>
+        Creative Studio &nbsp;&middot;&nbsp; Video &middot; Design &middot; Web
+      </p>
+
+      <h1 class="hero-title">
+        <span class="line">We make</span>
+        <!-- ★ "visuals" — hover changes font to Caveat handwritten -->
+        <span class="line italic hover-font">visuals</span>
+        <span class="line">that move.</span>
+      </h1>
+
+      <p class="hero-desc">Cinematic video edits, bold design, and digital experiences crafted to leave a mark. Two creators, one vision.</p>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn-primary"><i class="fas fa-play"></i> View Our Work</a>
+        <a href="#services" class="btn-ghost">Explore Services</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-pill"><strong>2</strong> creators, one vision</div>
+        <div class="stat-pill">Starting with <strong>video editing</strong></div>
+        <div class="stat-pill">Growing into <strong>full creative</strong></div>
+      </div>
+
+      <div class="scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"><div class="scroll-dot"></div></div>
+      </div>
+    </div>
+
+    <div class="hero-marquee">
+      <div class="mq">
+        <span>Video Editing</span><span class="mq-dot">&#9670;</span>
+        <span>Motion &amp; Reels</span><span class="mq-dot">&#9670;</span>
+        <span>Poster Design</span><span class="mq-dot">&#9670;</span>
+        <span>Logo &amp; Branding</span><span class="mq-dot">&#9670;</span>
+        <span>UI / UX Design</span><span class="mq-dot">&#9670;</span>
+        <span>Web Development</span><span class="mq-dot">&#9670;</span>
+        <span>Video Editing</span><span class="mq-dot">&#9670;</span>
+        <span>Motion &amp; Reels</span><span class="mq-dot">&#9670;</span>
+        <span>Poster Design</span><span class="mq-dot">&#9670;</span>
+        <span>Logo &amp; Branding</span><span class="mq-dot">&#9670;</span>
+        <span>UI / UX Design</span><span class="mq-dot">&#9670;</span>
+        <span>Web Development</span><span class="mq-dot">&#9670;</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SERVICES ═══════════ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-label"><span>01</span> What We Do</div>
+      <h2 class="section-title">Our <em>Services</em></h2>
+
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <p class="service-num">01 &mdash; Live Now</p>
+          <div class="service-icon">🎬</div>
+          <h3>Video Editing</h3>
+          <p>Cinematic cuts, colour grading, pacing and storytelling. Brand films, reels, short docs — handled with precision.</p>
+          <span class="service-badge">Available Now</span>
+        </div>
+        <div class="service-card fade-up">
+          <p class="service-num">02 &mdash; Live Now</p>
+          <div class="service-icon">⚡</div>
+          <h3>Reels &amp; Short Form</h3>
+          <p>High-energy content for Instagram, YouTube Shorts and TikTok. Punchy edits that stop the scroll dead.</p>
+          <span class="service-badge">Available Now</span>
+        </div>
+        <div class="service-card fade-up service-coming">
+          <p class="service-num">03 &mdash; Coming Soon</p>
+          <div class="service-icon">🎨</div>
+          <h3>Poster &amp; Logo Design</h3>
+          <p>Bold visual identities crafted intentionally. Every mark made with purpose, never templated.</p>
+          <span class="service-badge">In Progress</span>
+        </div>
+        <div class="service-card fade-up service-coming">
+          <p class="service-num">04 &mdash; Future</p>
+          <div class="service-icon">🖥</div>
+          <h3>UI / UX Design</h3>
+          <p>User-centred interfaces with real personality. Wireframes to polished high-fidelity designs.</p>
+          <span class="service-badge">Future</span>
+        </div>
+        <div class="service-card fade-up service-coming">
+          <p class="service-num">05 &mdash; Future</p>
+          <div class="service-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Fast, beautiful and functional websites. Custom coded, pixel-perfect, built to convert.</p>
+          <span class="service-badge">Future</span>
+        </div>
+        <div class="service-card fade-up service-coming" style="display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;">
+          <div style="font-size:2rem;opacity:.2;margin-bottom:.8rem;">✶</div>
+          <h3 style="opacity:.25">More coming...</h3>
+          <p style="opacity:.2">Always growing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-label"><span>02</span> Who We Are</div>
+      <div class="about-grid">
+
+        <div class="fade-up about-visual-wrap">
+          <!-- Animated orbital rings around logo -->
+          <div class="about-rings-wrap">
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+            <div class="about-img-frame">
+              <img src="source/logo.png" alt="Arca Studio" />
+            </div>
+          </div>
+          <!-- Stat cards below rings -->
+          <div class="about-stat-cards">
+            <div class="stat-card">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Creators, one vision</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">∞</span>
+              <span class="stat-label">Passion for craft</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <h2 class="section-title">A duo obsessed<br />with <em>craft.</em></h2>
+          <p class="about-para">Arca is built on the belief that great creative work isn't about tools — it's about <strong>vision</strong>. We're two friends who turned a shared obsession with visual storytelling into a studio where every frame, cut, and pixel is intentional.</p>
+          <p class="about-para">Starting with video editing as our foundation, we're building Arca into a full-stack creative partner for brands, creators, and businesses who refuse to settle for ordinary.</p>
+          <div class="about-goal">
+            <div class="goal-icon"><i class="fas fa-rocket"></i></div>
+            <div>
+              <strong>Our Mission</strong>
+              <p>Fast, communicative, and deeply invested in every project we put our name on.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROCESS ═══════════ -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section-label"><span>03</span> How We Work</div>
+      <h2 class="section-title">Our <em>Process</em></h2>
+
+      <div class="process-steps">
+        <div class="process-line"></div>
+        <div class="process-step fade-up">
+          <div class="step-n">01</div>
+          <h4>Discovery</h4>
+          <p>We understand your brand, goals, and vision before touching any tool or timeline.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-n">02</div>
+          <h4>Concept</h4>
+          <p>A clear creative direction crafted and aligned with you before we execute.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-n">03</div>
+          <h4>Create</h4>
+          <p>We produce the work meticulously, with your feedback in every revision loop.</p>
+        </div>
+        <div class="process-step fade-up">
+          <div class="step-n">04</div>
+          <h4>Deliver</h4>
+          <p>Final files in your preferred format, ready to publish or launch immediately.</p>
+        </div>
+      </div>
+
+      <div class="process-cta fade-up">
+        <div class="process-cta-text">
+          <p>Ready to start?</p>
+          <span>We respond within 24 hours.</span>
+        </div>
+        <a href="#contact" class="btn-primary">Get In Touch <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ REELS ═══════════ -->
+  <section class="reels-section" id="work">
+    <div class="container">
+      <div class="section-label"><span>04</span> Selected Work</div>
+      <h2 class="section-title">Our <em>Reels</em></h2>
+
+<!-- ROW 1 — VERTICAL (9:16) Reels -->
+<p class="row-label fade-up">REELS</p>
+<div class="reels-vertical">
+
+  <div class="reel-card fade-up" data-title="Reel 1">
+    <video class="rc-video" poster="source/Imges/love_or_ trap.png" preload="none" playsinline loop>
+      <source src="source/reel2.mp4" type="video/mp4">
+    </video>
+    <div class="rc-thumb-cover" style="background-image:url('source/Imges/love_or_trap.png')"></div>
+    <div class="rc-play-btn"><i class="fas fa-play"></i></div>
+    <div class="rc-bottom"><p class="rc-title">Fall in Love OR Trap in Love</p></div>
+  </div>
+
+  <div class="reel-card fade-up" data-title="Reel 2">
+    <video class="rc-video" poster="thumb2.jpg" preload="none" playsinline loop>
+      <source src="source/reel.mp4" type="video/mp4">
+    </video>
+    <div class="rc-thumb-cover" style="background-image:url('source/Imges/sameperson.png')"></div>
+    <div class="rc-play-btn"><i class="fas fa-play"></i></div>
+    <div class="rc-bottom"><p class="rc-title">Same ride, different machine</p></div>
+  </div>
+
+  <div class="reel-card fade-up" data-title="Reel 3">
+    <video class="rc-video" poster="source/Imges/payana.png" preload="none" playsinline loop>
+      <source src="source/payana.mp4" type="video/mp4">
+    </video>
+    <div class="rc-thumb-cover" style="background-image:url('source/Imges/payana.png')"></div>
+    <div class="rc-play-btn"><i class="fas fa-play"></i></div>
+    <div class="rc-bottom"><p class="rc-title">Payana Car Museum</p></div>
+  </div>
+
+  <div class="reel-card fade-up" data-title="Reel 4">
+    <video class="rc-video" poster="thumb4.jpg" preload="none" playsinline loop>
+      <source src="source/workoutreel.mp4" type="video/mp4">
+    </video>
+    <div class="rc-thumb-cover" style="background-image:url('source/Imges/workout.png')"></div>
+    <div class="rc-play-btn"><i class="fas fa-play"></i></div>
+    <div class="rc-bottom"><p class="rc-title">Earned, not given</p></div>
+  </div>
+
+</div>
+
+      <!-- ROW 2 — HORIZONTAL (16:9) Films -->
+<div class="reels-horizontal">
+
+  <div class="reel-card fade-up" data-title="Film 1">
+    <video class="rc-video" poster="source/Imges/landscape1.png" preload="none" playsinline loop>
+      <source src="source/reel1.mp4" type="video/mp4">
+    </video>
+    <div class="rc-thumb-cover" style="background-image:url('source/Imges/landscape1.png')"></div>
+    <div class="rc-play-btn"><i class="fas fa-play"></i></div>
+    <div class="rc-bottom"><p class="rc-title">Film Title 1</p></div>
+  </div>
+
+  <div class="reel-card fade-up" data-title="Film 2">
+    <video class="rc-video" poster="source/Imges/landscape3.png" preload="none" playsinline loop>
+      <source src="source/reel3.mp4" type="video/mp4">
+    </video>
+    <div class="rc-thumb-cover" style="background-image:url('source/Imges/landscape2.png')"></div>
+    <div class="rc-play-btn"><i class="fas fa-play"></i></div>
+    <div class="rc-bottom"><p class="rc-title">Film Title 2</p></div>
+  </div>
+
+  <div class="reel-card fade-up" data-title="Film 3">
+    <video class="rc-video" poster="source/Imges/landscape3.png" preload="none" playsinline loop>
+      <source src="source/reel4.mp4" type="video/mp4">
+    </video>
+    <div class="rc-thumb-cover" style="background-image:url('source/Imges/landscape3.png')"></div>
+    <div class="rc-play-btn"><i class="fas fa-play"></i></div>
+    <div class="rc-bottom"><p class="rc-title">Film Title 3</p></div>
+  </div>
+
+</div>
+
+      <!-- Social Buttons -->
+      <div class="reels-footer fade-up">
+        <div class="social-btns">
+          <a href="https://www.instagram.com/arca_studio__?igsh=NTd0cDZsd283amxm"
+             target="_blank" rel="noopener" class="social-btn social-btn-ig">
+            <i class="fab fa-instagram"></i><span>Follow on Instagram</span>
+          </a>
+          <a href="https://www.youtube.com/@Arca.studio-co"
+             target="_blank" rel="noopener" class="social-btn social-btn-yt">
+            <i class="fab fa-youtube"></i><span>Watch on YouTube</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ CONTACT ═══════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-label"><span>05</span> Get In Touch</div>
+      <h2 class="section-title">Let's build something <em>iconic.</em></h2>
+
+      <div class="contact-inner">
+        <div class="fade-up">
+          <p class="contact-desc">Got a project? A rough idea? Tell us everything — we love a good brief and respond fast.</p>
+          <div class="contact-links">
+            <a href="mailto:hello.arca2622@gmail.com" class="contact-link">
+              <div class="link-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="link-label">Email</span>
+                <span class="link-value">hello.arca2622@gmail.com</span>
+              </div>
+              <i class="fas fa-arrow-up-right link-arrow"></i>
+            </a>
+            <a href="https://www.instagram.com/arca_studio__?igsh=NTd0cDZsd283amxm" target="_blank" class="contact-link">
+              <div class="link-icon"><i class="fab fa-instagram"></i></div>
+              <div>
+                <span class="link-label">Instagram</span>
+                <span class="link-value">@arca_studio__</span>
+              </div>
+              <i class="fas fa-arrow-up-right link-arrow"></i>
+            </a>
+            <a href="https://www.youtube.com/@Arca.studio-co" target="_blank" class="contact-link">
+              <div class="link-icon"><i class="fab fa-youtube"></i></div>
+              <div>
+                <span class="link-label">YouTube</span>
+                <span class="link-value">@Arca.studio-co</span>
+              </div>
+              <i class="fas fa-arrow-up-right link-arrow"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label>What do you need?</label>
+              <input type="text" name="service" placeholder="e.g. video editing, reel" />
+            </div>
+            <div class="form-group">
+              <label>Tell us about your project</label>
+              <textarea rows="4" name="message" placeholder="Give us the details..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary full-width">
+              Send Message <i class="fas fa-paper-plane"></i>
+            </button>
+            <div class="form-success" id="formSuccess">&#10003; Message sent! We'll reply within 24 hours.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="source/logo.png" alt="Arca" />
+          <span>ARCA</span>
+        </div>
+        <p class="footer-tagline">Video &middot; Design &middot; Web</p>
+        <p class="footer-copy">&copy; 2025 Arca Studio. All rights reserved.</p>
+      </div>
+
+      <div class="footer-links">
+        <p class="footer-col-title">Navigate</p>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#process">Process</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <p class="footer-col-title">Contact</p>
+        <a href="mailto:hello.arca2622@gmail.com">hello.arca2622@gmail.com</a>
+        <a href="https://www.instagram.com/arca_studio__?igsh=NTd0cDZsd283amxm" target="_blank">@arca_studio__</a>
+        <a href="https://www.youtube.com/@Arca.studio-co" target="_blank">YouTube Channel</a>
+      </div>
+
+      <div class="footer-social-col">
+        <p class="footer-col-title">Follow Us</p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/arca_studio__?igsh=NTd0cDZsd283amxm" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@Arca.studio-co" target="_blank" title="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="mailto:hello.arca2622@gmail.com" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p>Built with passion by Arca Studio &mdash; India</p>
+    </div>
+  </footer>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script>
+    /* ── 1. LENIS SMOOTH SCROLL ── */
+    const lenis = new Lenis({
+      duration: 1.4,
+      easing: t => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      smoothWheel: true, wheelMultiplier: 1, touchMultiplier: 2,
+    });
+    (function raf(time) { lenis.raf(time); requestAnimationFrame(raf); })(0);
+
+    /* ── 2. PROGRESS BAR ── */
+    const progressFill = document.getElementById('progress-fill');
+    lenis.on('scroll', ({ scroll, limit }) => {
+      if (progressFill) progressFill.style.width = (limit > 0 ? (scroll / limit) * 100 : 0) + '%';
+    });
+
+    /* ── 3. SIDE NAV ACTIVE ── */
+    const SECTIONS = ['hero','services','about','process','work','contact'];
+    function updateNav(scrollY) {
+      let active = 'hero';
+      SECTIONS.forEach(id => {
+        const el = document.getElementById(id);
+        if (el && scrollY >= el.offsetTop - window.innerHeight * 0.45) active = id;
+      });
+      document.querySelectorAll('.side-nav a').forEach(a =>
+        a.classList.toggle('active', a.dataset.section === active)
+      );
+    }
+    lenis.on('scroll', ({ scroll }) => { updateNav(scroll); });
+
+    /* ── 4. ANCHOR CLICKS ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.getElementById(a.getAttribute('href').slice(1));
+        if (target) { e.preventDefault(); lenis.scrollTo(target, { duration: 1.4 }); }
+      });
+    });
+
+    /* ── 5. LOADER ── */
+    window.addEventListener('load', () =>
+      setTimeout(() => document.getElementById('loader').classList.add('gone'), 1400)
+    );
+
+    /* ── 6. CUSTOM CURSOR ── */
+    const cur = document.getElementById('cursor');
+    const cfol = document.getElementById('cursor-follower');
+    let mx = 0, my = 0, fx = 0, fy = 0;
+    document.addEventListener('mousemove', e => {
+      mx = e.clientX; my = e.clientY;
+      cur.style.left = mx + 'px'; cur.style.top = my + 'px';
+    });
+    (function tick() {
+      fx += (mx - fx) * 0.1; fy += (my - fy) * 0.1;
+      cfol.style.left = fx + 'px'; cfol.style.top = fy + 'px';
+      requestAnimationFrame(tick);
+    })();
+    document.querySelectorAll('a, button, .reel-card, .service-card, .contact-link').forEach(el => {
+      el.addEventListener('mouseenter', () => { cur.classList.add('hovered'); cfol.classList.add('hovered'); });
+      el.addEventListener('mouseleave', () => { cur.classList.remove('hovered'); cfol.classList.remove('hovered'); });
+    });
+
+    /* ── 7. PARTICLES ── */
+    const pw = document.getElementById('particles');
+    if (pw) {
+      for (let i = 0; i < 28; i++) {
+        const d = document.createElement('div');
+        d.className = 'particle';
+        const sz = Math.random() * 3 + 1, isB = Math.random() > .5;
+        d.style.cssText = `width:${sz}px;height:${sz}px;left:${Math.random()*100}%;background:${isB?'rgba(0,87,255,.55)':'rgba(0,212,255,.55)'};box-shadow:0 0 ${sz*3}px ${isB?'rgba(0,87,255,.4)':'rgba(0,212,255,.4)'};animation-duration:${Math.random()*12+8}s;animation-delay:${Math.random()*8}s`;
+        pw.appendChild(d);
+      }
+    }
+
+    /* ── 8. FADE-UP OBSERVER ── */
+    const fadeObs = new IntersectionObserver(entries => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = (i * 0.07) + 's';
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => fadeObs.observe(el));
+
+    /* ── 9. REEL CARDS — inline play/pause ── */
+    document.querySelectorAll('.reel-card').forEach(card => {
+      const video   = card.querySelector('.rc-video');
+      const playBtn = card.querySelector('.rc-play-btn');
+      const pb = document.createElement('div');
+      pb.className = 'rc-pause-btn';
+      pb.innerHTML = '<i class="fas fa-pause"></i>';
+      card.appendChild(pb);
+      function playVideo() {
+        document.querySelectorAll('.reel-card.playing').forEach(other => {
+          if (other !== card) { other.querySelector('.rc-video').pause(); other.classList.remove('playing'); }
+        });
+        video.play(); card.classList.add('playing');
+      }
+      function pauseVideo() { video.pause(); card.classList.remove('playing'); }
+      playBtn.addEventListener('click', e => { e.stopPropagation(); playVideo(); });
+      card.addEventListener('click', () => { if (card.classList.contains('playing')) pauseVideo(); });
+      video.addEventListener('ended', () => card.classList.remove('playing'));
+    });
+
+    /* ── 10. CONTACT FORM ── */
+    document.getElementById('contactForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const btn = e.target.querySelector('button');
+      btn.textContent = 'Sending...'; btn.disabled = true;
+      setTimeout(() => {
+        document.getElementById('formSuccess').style.display = 'block';
+        e.target.reset(); btn.innerHTML = 'Send Message <i class="fas fa-paper-plane"></i>'; btn.disabled = false;
+      }, 1200);
+    });
+  </script>
+</body>
+</html>
